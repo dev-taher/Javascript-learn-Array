@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array</title>
+</head>
+<body>
+    
+    <script>
+
+    // function display(){
+    //     console.log("I am a display 1")
+    // }
+    // display();
+
+    //   const display2 = () => {
+    //       console.log("I am a display 2")
+    //   }  
+    //   display2();
+
+//   function message1(){
+//       return "Hi I am message 1";
+//   }
+//   console.log(message1());
+
+// const message2 = () => { return "Hi I am message 2"; }
+// console.log(message2());
+
+
+// function add1(num1,num2){
+//     return num1+ num2;
+// }
+// console.log(add1(10,20));
+
+// const add2 = (num1,num2) => num1+ num2;
+// console.log(add2(15,25));
+
+
+
+
+// var students = [
+//     {
+//         id : 101,
+//         name : 'Anisul',
+//         gpa : 2.65 
+//     },
+//     {
+//         id : 102,
+//         name : 'Islam',
+//         gpa : 4.65 
+//     },
+//     {
+//         id : 103,
+//         name : 'Zakir',
+//         gpa : 3.65 
+//     },
+// ]
+// console.log(students);
+
+// function studentNames (){
+//     return students.filter(function(x){
+//         return x.gpa > 3
+//     }).map(function(y){
+//         return y.name; 
+//     });
+// }
+//  console.log(studentNames());
+
+
+var students = [
+    {
+        id:101,
+        name:'Taher',
+        gpa:2.68
+    },
+    {
+        id:102,
+        name:'Zakir',
+        gpa:3.50
+    },
+    {
+        id:103,
+        name:'Zafor',
+        gpa:4.20
+    },
+]
+ console.log(students);
+
+ function studentNames(){
+     return students.filter(function(x){
+         return x.gpa > 3
+     }).map(function(y){
+         return y.name
+     });
+ }
+ console.log(studentNames());
+
+var students = [
+    {
+        id:101,
+        name:'taher',
+        gpa:3.50
+    },
+    {
+        id:101,
+        name:'Rakib',
+        gpa:2.50
+    },
+    {
+        id:101,
+        name:'Arif',
+        gpa:4.50
+    },
+    {
+        id:101,
+        name:'Zakir',
+        gpa:3.00
+    },
+]
+console.log(students);
+
+ function studentNames (){
+     return students.filter(function(x){
+         return x.gpa >= 3.00
+     }).map(function(y){
+         return y.name
+     });
+ }
+ console.log(studentNames());
+
+  var studentNames2 = () =>{
+      return students.filter((x) => x.gpa > 3).map((y) => y.id);
+  }
+  console.log(studentNames2());
+
+
+  var studentNames2 = () =>{
+      return students.filter((x) => x.gpa >=3).map((y) => y.name);
+  }
+
+  console.log(studentNames2());
+     </script>
+
+
+</body>
+</html>
